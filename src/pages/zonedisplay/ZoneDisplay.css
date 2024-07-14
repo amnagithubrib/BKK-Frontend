@@ -1,0 +1,110 @@
+ZoneDisplay.css
+
+/* Default styles */
+
+.zone-display-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.zone-display-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 16px;
+  padding-top: 64px; /* Add top padding */
+  overflow: hidden; /* Hide overflow to avoid scroll bars */
+}
+
+.table-container {
+  flex: 1;
+  width: 100%;
+  overflow-y: auto; /* Enable vertical scrolling only */
+}
+
+.table-container table {
+  width: 100%; /* Full width of the container */
+  table-layout: auto; /* Ensure flexible column widths */
+}
+
+.table-container th,
+.table-container td {
+  padding: 8px 16px; /* Adjust cell padding for better readability */
+  text-align: center; /* Center align text in cells */
+  white-space: nowrap; /* Prevent text wrapping in cells */
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 1024px) {
+  .zone-display-content {
+      padding-top: 32px; /* Adjust top padding for medium screens */
+  }
+
+  .table-container table {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 650px) {
+  .zone-display-content {
+      padding-top: 16px;
+  }
+
+  .table-container table {
+      font-size: 12px;
+  }
+
+  .table-container th,
+  .table-container td {
+      padding: 8px; 
+      font-size: 11px; 
+  }
+}
+
+
+
+@media (min-width: 1280px) {
+  .zone-display-container {
+      width: 90%; 
+      margin: 0 auto;
+  }
+
+  .zone-display-content {
+      padding-top: 80px; 
+      padding-left: 32px; 
+      padding-right: 32px; 
+  }
+
+  .table-container table {
+      font-size: 16px;
+  }
+
+  .table-container th,
+  .table-container td {
+      padding: 12px 24px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .zone-display-container {
+      width: 80%; 
+  }
+
+  .zone-display-content {
+      padding-top: 100px; 
+      padding-left: 48px;
+      padding-right: 48px; 
+  }
+
+  .table-container table {
+      font-size: 18px; 
+  }
+
+  .table-container th,
+  .table-container td {
+      padding: 16px 32px;
+  }
+}

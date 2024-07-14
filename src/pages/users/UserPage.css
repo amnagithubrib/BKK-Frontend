@@ -1,0 +1,58 @@
+
+
+.user-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  padding-right: 30%;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+.elements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.element-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

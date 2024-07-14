@@ -1,0 +1,22 @@
+.button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+    border: none;
+    background-color:#fcb900;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #fcb900;
+  }
+  
+  .button:active {
+    transform: scale(0.98);
+  }
+  
